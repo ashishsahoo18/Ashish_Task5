@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Navbar (no flex: inline-block cells) ---------- */
+.navbar {
+    height: 12vh;
+    padding: 0 8vw;
+    font-size: 0;               /* removes whitespace gaps between inline-blocks */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+
+.nav-logo,
+.nav-links,
+.nav-user {
+    display: inline-block;
+    height: 12vh;
+    line-height: 12vh;
+    vertical-align: top;
+    font-size: 1vw;
+}
+
+.nav-logo {
+    width: 20%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #3d4852;
+}
+
+.nav-links {
+    width: 60%;
+    text-align: center;
+}
+
+.nav-links a {
+    display: inline;
+    margin: 0 0.9vw;
+    font-size: 0.85vw;
+    color: #5b6670;
+    text-decoration: none;
+}
+
+.nav-user {
+    width: 20%;
+    text-align: right;
+}
+
+.username {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+    padding: 1.8vh 1.8vw;
+    border-radius: 0.8vw;
+    background-color: #e6f5ff;
+    color: #0aa5ff;
+    font-size: 0.7vw;
+    font-weight: 700;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    height: 88vh;
+    font-size: 0;
+}
+
+.hero-left,
+.hero-right {
+    display: inline-block;
+    width: 50%;
+    height: 88vh;
+    vertical-align: top;
+}
+
+.hero-left {
+    padding: 14vh 4vw 0 10vw;
+}
+
+.hero-left h1 {
+    margin: 0 0 2vh 0;
+    font-size: 2.9vw;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #4a5560;
+}
+
+.highlight {
+    display: block;
+    color: #00a6ff;
+}
+
+.hero-left p {
+    margin: 0 0 5vh 0;
+    width: 85%;
+    font-size: 1.05vw;
+    line-height: 1.5;
+    color: #a3abb3;
+}
+
+.book-btn {
+    padding: 2.2vh 2.4vw;
+    border: none;
+    border-radius: 0.9vw;
+    background-image: linear-gradient(to right, #00a8ff, #33b5ff);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.9vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero-right {
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.hero-right svg {
+    display: inline-block;
+    height: 68vh;
+    width: auto;
+    max-width: 90%;
+}
